@@ -1,7 +1,13 @@
 //Exercise 1: Add Strings
 
-const addStrings = function (num1, num2) {
-  //Start coding here
+const addStrings = (num1, num2) => {
+  // convert strings to integers
+  const intNum1 = parseInt(num1);
+  const intNum2 = parseInt(num2);
+
+  //then plus the two numbers
+  const result = intNum1 + intNum2;
+  return result.toString();
 };
 
 const result1 = addStrings("11", "123");
